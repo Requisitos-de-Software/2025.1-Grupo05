@@ -1,0 +1,163 @@
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color:        #034d84;
+  --md-primary-fg-color--light: #336fa3;
+  --md-primary-fg-color--dark:  #00345b;
+
+  /* links */
+  .md-typeset a {
+    color: #034d84;
+  }
+
+  /* cabeçalhos de tabela */
+  .md-typeset table th {
+    background-color: #034d84;
+    color: white;
+  }
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color:        #7091be; /* um azul mais claro para contraste */
+  --md-primary-fg-color--light: #9fd3ff;
+  --md-primary-fg-color--dark:  #1c7ed6;
+
+  .md-typeset a {
+    color: #7091be;
+  }
+
+  .md-typeset table th {
+    background-color: #7091be;
+    color: black;
+  }
+}
+
+/* Tema de alto contraste para MkDocs Material */
+[data-md-color-scheme="high-contrast"] {
+  /* Cores principais */
+  --md-primary-fg-color: #ffff00;          /* Amarelo - destaque principal */
+  --md-primary-bg-color: #000000;          /* Fundo preto */
+  --md-default-bg-color: #000000;          /* Fundo principal */
+  --md-accent-fg-color: #ff00ff;           /* Magenta - destaques */
+  --md-typeset-color: #ffffff;             /* Texto branco */
+
+  /* Links */
+  --md-typeset-a-color: #00ffff;           /* Ciano para links */
+
+  /* Código */
+  --md-code-bg-color: #111111;
+  --md-code-fg-color: #00ff00;
+
+  /* Tabelas */
+  --md-typeset-table-color: #ffffff;
+  --md-typeset-table-bg-color: #000000;
+  --md-typeset-table-border-color: #ffffff;
+}
+
+
+/* Corrige a cor dos itens da nav */
+[data-md-color-scheme="high-contrast"] .md-nav__link {
+  color: #ffff00 !important; /* Amarelo para os links de navegação */
+  font-weight: normal;
+}
+
+/* Realce de código inline */
+[data-md-color-scheme="high-contrast"] .md-typeset code {
+  color: #00ff00;
+  background-color: #111;
+}
+
+
+[data-md-color-scheme="high-contrast"] .md-nav__link:hover {
+  color: #ff00ff !important;
+  background-color: #222 !important;
+}
+
+/* Estiliza o índice lateral */
+[data-md-color-scheme="high-contrast"] .md-nav {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* Corrige título da página */
+[data-md-color-scheme="high-contrast"] .md-content h1,
+[data-md-color-scheme="high-contrast"] .md-content h2,
+[data-md-color-scheme="high-contrast"] .md-content h3 {
+  color: #ffff00; /* Amarelo para os títulos */
+}
+
+/* Cabeçalho (top bar) */
+[data-md-color-scheme="high-contrast"] .md-header {
+  background-color: #000000 !important; /* Fundo preto para topbar */
+  color: #ffff00 !important;            /* Texto amarelo */
+  font-weight: bold !important;          /* Negrito para os itens da topbar */
+  border-bottom: 2px solid #ffff00 !important; /* Borda amarela */
+}
+
+/* Título da topbar (se houver) */
+[data-md-color-scheme="high-contrast"] .md-header .md-header-nav__brand {
+  color: #ffff00 !important; /* Cor amarela para o logo ou título */
+  font-weight: bold !important; /* Torna o título em negrito */
+  font-size: 1.5em !important; /* Aumenta o tamanho do título */
+}
+
+/* Links da topbar */
+[data-md-color-scheme="high-contrast"] .md-header .md-header-nav__link {
+  color: #ffff00 !important; /* Links amarelos */
+  font-weight: bold !important; /* Negrito para os links */
+  font-size: 1.1em !important;  /* Tamanho de fonte maior */
+  text-transform: uppercase !important; /* Maiúsculas para maior visibilidade */
+  letter-spacing: 0.05em !important; /* Espaçamento entre as letras */
+}
+
+/* Efeito de hover nos links da topbar */
+[data-md-color-scheme="high-contrast"] .md-header .md-header-nav__link:hover {
+  color: #ff00ff !important; /* Magenta no hover */
+  background-color: #111111 !important; /* Fundo escuro no hover */
+}
+/* Header e suas rotas */
+[data-md-color-scheme="high-contrast"]
+.md-tabs__link
+ {
+  color: #000000 !important; /* Magenta no hover */
+  font-weight: 900 !important; /* Negrito para os links */
+}
+
+
+/* Rodapé */
+[data-md-color-scheme="high-contrast"] .md-footer {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* Botões, inputs e selects */
+[data-md-color-scheme="high-contrast"] button,
+[data-md-color-scheme="high-contrast"] input,
+[data-md-color-scheme="high-contrast"] select,
+[data-md-color-scheme="high-contrast"] textarea {
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid #ffff00;
+}
+/* Alterando a cor dos links ativos na barra de navegação em alto contraste */
+[data-md-color-scheme="high-contrast"] .md-nav__link--active {
+  color: #ff00ff !important;  /* Cor magenta para o link ativo */
+  font-weight: bold !important; /* Deixar o link ativo em negrito */
+}
+
+/* Scrollbar para visibilidade */
+[data-md-color-scheme="high-contrast"] ::-webkit-scrollbar {
+  width: 10px;
+}
+[data-md-color-scheme="high-contrast"] ::-webkit-scrollbar-track {
+  background: #000; 
+} 
+[data-md-color-scheme="high-contrast"] ::-webkit-scrollbar-thumb {
+  background: #ffff00;
+}
+
+/* Corrige cor de fundo de blocos de destaque (notas, avisos, etc) */
+[data-md-color-scheme="high-contrast"] .md-typeset .admonition,
+[data-md-color-scheme="high-contrast"] .md-typeset details {
+  background-color: #111111;
+  border-left: 4px solid #ff00ff;
+  color: #ffffff;
+}
