@@ -1,0 +1,4350 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://github.com/Requisitos-de-Software/2025.1-Grupo05/elicitacao/Requisitos_versoes/">
+      
+      
+        <link rel="prev" href="../priorizacao_selecionadas/votacao/">
+      
+      
+        <link rel="next" href="../Requisitos/">
+      
+      
+      <link rel="icon" href="../../assets/logo_ibge.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
+    
+    
+      
+        <title>Requisitos Elicitados Versões Anteriores - IBGE</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4af4bdda.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#requisitos-elicitados" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="IBGE" class="md-header__button md-logo" aria-label="IBGE" data-md-component="logo">
+      
+  <img src="../../assets/logo_ibge.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            IBGE
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Requisitos Elicitados Versões Anteriores
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_3" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: high-contrast)" data-md-color-scheme="high-contrast" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_3">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Requisitos-de-Software/2025.1-Grupo05" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2025.1-IBGE
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Início
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../atas/ata1/" class="md-tabs__link">
+          
+  
+  
+  Atas
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../aps/ap1/ap1/" class="md-tabs__link">
+          
+  
+  
+  Apresentações
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../Planejamento/AplicativoEscolhido/" class="md-tabs__link">
+          
+  
+  
+  Planejamento
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../prerastreabilidade/rich-pic_alt/" class="md-tabs__link">
+          
+  
+  
+  Pré-rastreabilidade
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../usuarios/PerfilDoUsuario/" class="md-tabs__link">
+          
+  
+  
+  Elicitação
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../modelagem/useCases/" class="md-tabs__link">
+          
+  
+  
+  Modelagem
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../rastreabilidade/elos/" class="md-tabs__link">
+          
+  
+  
+  Pós-rastreabilidade
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../Verificacao/entrega1/lv1/" class="md-tabs__link">
+          
+  
+  
+  Inspeção
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="IBGE" class="md-nav__button md-logo" aria-label="IBGE" data-md-component="logo">
+      
+  <img src="../../assets/logo_ibge.png" alt="logo">
+
+    </a>
+    IBGE
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Requisitos-de-Software/2025.1-Grupo05" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2025.1-IBGE
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Início
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Atas
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Atas
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/ata1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/ata2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/ata3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 3
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/ata4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 4
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/ata5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 5
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/ata6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 6
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/ata7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 7
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Apresentações
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Apresentações
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    1ª Entrega
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            1ª Entrega
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aps/ap1/ap1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Apresentação - 1ª entrega
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    2ª Entrega
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            2ª Entrega
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aps/ap2/ap2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Apresentação - 2ª entrega
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    3ª Entrega
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            3ª Entrega
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aps/ap3/ap3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Apresentação - 3ª entrega
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    4ª Entrega
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            4ª Entrega
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aps/ap4/ap4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Apresentação - 4ª entrega
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    6ª Entrega
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            6ª Entrega
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aps/ap6/ap6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Apresentação - 6ª entrega
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Planejamento
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Planejamento
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Planejamento/AplicativoEscolhido/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Aplicativo Escolhido
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Planejamento/Ferramentas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ferramentas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Planejamento/Metodologia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Metodologia
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Planejamento/Cronograma/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cronograma
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Pré-rastreabilidade
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Pré-rastreabilidade
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Rich Picture
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            Rich Picture
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../prerastreabilidade/rich-pic_alt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Aplicativos analisados
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../prerastreabilidade/rich-picture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Aplicativo selecionado
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Elicitação
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Elicitação
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_1" id="__nav_6_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Usuários
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_1">
+            <span class="md-nav__icon md-icon"></span>
+            Usuários
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usuarios/PerfilDoUsuario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Perfil do Usuário
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usuarios/Personas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Personas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tecnicas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Técnicas analisadas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Técnicas selecionadas
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3">
+            <span class="md-nav__icon md-icon"></span>
+            Técnicas selecionadas
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tecnicas_selecionadas/analise_interface/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Análise de Interface
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tecnicas_selecionadas/brainstorming/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Brainstorming
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tecnicas_selecionadas/introspeccao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introspecção
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tecnicas_selecionadas/questionario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Questionário
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tecnicas_selecionadas/entrevista/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrevista
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../priorizacao_analisadas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Técnicas de Priorização analisadas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_5" id="__nav_6_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Técnicas de Priorização selecionadas
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_5">
+            <span class="md-nav__icon md-icon"></span>
+            Técnicas de Priorização selecionadas
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../priorizacao_selecionadas/first_things_first/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    First Things First
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../priorizacao_selecionadas/moscow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MoSCoW
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../priorizacao_selecionadas/%24100/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    $100
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../priorizacao_selecionadas/prioriza%C3%A7%C3%A3o_por_3_n%C3%ADveis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Priorização por 3 Níveis
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../priorizacao_selecionadas/votacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Votação
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Requisitos Elicitados Versões Anteriores
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Requisitos Elicitados Versões Anteriores
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introducao" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Introdução
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-metodologia" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Metodologia
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Metodologia">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-legendas" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 Legendas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-versoes-anteriores" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Versões anteriores
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Versões anteriores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-requisitos-funcionais-e-nao-funcionais-elicitados-versao-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 Requisitos Funcionais e Não Funcionais Elicitados Versão 1.0
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-requisitos-nao-funcionais-elicitados-versao-20" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 Requisitos Não Funcionais Elicitados Versão 2.0
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-historico-de-versoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Histórico de Versões
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Requisitos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Requisitos Elicitados Oficial
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Modelagem
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Modelagem
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelagem/useCases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Casos de uso
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelagem/especificacaoSuplementar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Especificação Suplementar
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelagem/cenarios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cenários
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelagem/lexicos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Léxicos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_5" id="__nav_7_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Ágil
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_5">
+            <span class="md-nav__icon md-icon"></span>
+            Ágil
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelagem/agil/NFR/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    NFR Framework
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelagem/agil/userStories/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Histórias de Usuário
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelagem/agil/productBacklog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Backlog do Produto
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Pós-rastreabilidade
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Pós-rastreabilidade
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rastreabilidade/elos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Elos de rastreabilidade
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_2" id="__nav_8_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Matrizes de Rastreabilidade
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2">
+            <span class="md-nav__icon md-icon"></span>
+            Matrizes de Rastreabilidade
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rastreabilidade/matrizes/forwardto/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Forward To
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rastreabilidade/matrizes/forwardfrom/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Forward From
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rastreabilidade/matrizes/backwardfrom/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Backward From
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rastreabilidade/matrizes/matrizgeral/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Matriz Geral
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Inspeção
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Inspeção
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_9_1" id="__nav_9_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Entrega 1
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_1">
+            <span class="md-nav__icon md-icon"></span>
+            Entrega 1
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Verificacao/entrega1/lv1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Grupo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Verificacao/entrega1/etr1_gr%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Grupo +1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Verificacao/entrega1/monitor1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Monitor
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_9_2" id="__nav_9_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Entrega 2
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_2">
+            <span class="md-nav__icon md-icon"></span>
+            Entrega 2
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Verificacao/entrega2/lv2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Grupo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Verificacao/entrega2/etr2_gr%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Grupo +1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Verificacao/entrega2/monitor2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Monitor
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_9_3" id="__nav_9_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Entrega 3
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_3">
+            <span class="md-nav__icon md-icon"></span>
+            Entrega 3
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Verificacao/entrega3/lv3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Grupo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Verificacao/entrega3/etr3_gr%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Grupo +1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_9_4" id="__nav_9_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Entrega 4
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_4">
+            <span class="md-nav__icon md-icon"></span>
+            Entrega 4
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Verificacao/entrega4/lv4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Grupo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Verificacao/entrega4/etr4_gr%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Grupo +1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_9_5" id="__nav_9_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Entrega 6
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_5">
+            <span class="md-nav__icon md-icon"></span>
+            Entrega 6
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Verificacao/entrega6/lv6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Grupo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Verificacao/entrega6/etr6_gr%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Grupo +1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introducao" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Introdução
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-metodologia" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Metodologia
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Metodologia">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-legendas" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 Legendas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-versoes-anteriores" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Versões anteriores
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Versões anteriores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-requisitos-funcionais-e-nao-funcionais-elicitados-versao-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 Requisitos Funcionais e Não Funcionais Elicitados Versão 1.0
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-requisitos-nao-funcionais-elicitados-versao-20" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 Requisitos Não Funcionais Elicitados Versão 2.0
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-historico-de-versoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Histórico de Versões
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="requisitos-elicitados">Requisitos Elicitados</h1>
+<h2 id="1-introducao">1. Introdução</h2>
+<div style="text-align: justify; text-indent: 2cm;"> Este arquivo tem como objetivo registrar todas as versões dos requisitos elicitados ao longo do projeto, incluindo tanto os Requisitos Funcionais quanto os Não Funcionais.
+
+As informações consolidadas aqui resultam da aplicação de diversas técnicas de elicitação, como <a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/analise_interface/">Análise de Interface do Usuário</a>, <a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/brainstorming/">Brainstorming</a>, <a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/introspeccao/">Introspecção</a>, <a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/questionario/">Questionário</a> e <a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/entrevista/">Entrevista</a>. Além disso, a <a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/">Especificação Suplementar</a> foi utilizada como base para complementar a identificação de Requisitos Não Funcionais. </div>
+
+<h2 id="2-metodologia">2. Metodologia</h2>
+<div style="text-align: justify; text-indent: 2cm;">
+Como citado anteriormente, os requisitos foram elicitados pelas técnicas escolhidas pelo grupo. Nas tabelas 1 e 2, a listagem desses requisitos pode ser observada, cada um com seu ID próprio, descrição, um hyperlink de rastreabilidade para a(s) técnica(s) que o elicitou e se ele foi implementado ou não na aplicação atual. 
+</div>
+
+<h3 id="21-legendas">2.1 Legendas</h3>
+<div style="text-align: justify; text-indent: 2cm;">
+A legenda para cada sigla é a seguinte:
+</div>
+
+<div style="text-align: justify; padding-left: 4em; margin-top: 1em;">
+<ul>
+<li>RF* - Requisito Funcional nº*
+<li>RNF* - Requisito Não Funcional nº*  
+<li>RFA* - Requisito Funcional de Análise de Interface nº*
+<li>RFB* - Requisito Funcional de Brainstorming nº*
+<li>RFI* -  Requisito Funcional de Instrospecção nº* 
+<li>RFQ* -  Requisito Funcional de Questionário nº*
+<li>RFE* -  Requisito Funcional de Entrevista nº*
+<li>RNFE* -  Requisito Não Funcional de Entrevista nº*
+</ul>
+</div>
+
+<h3 id="3-versoes-anteriores">3. Versões anteriores</h3>
+<h4 id="31-requisitos-funcionais-e-nao-funcionais-elicitados-versao-10">3.1 Requisitos Funcionais e Não Funcionais Elicitados Versão 1.0</h4>
+<div style="text-align: justify; text-indent: 2cm;">
+A primeira versão da tabela geral de Requisitos Elicitados realizada pelo grupo foi entregue como artefato da <a href="https://requisitos-de-software.github.io/2025.1-IBGE/aps/ap2/ap2/">Entrega 2</a> e pode ser observada abaixo.
+</div>
+
+<p><font size="3"><p style="text-align: center">Tabela 1: Requisitos elicitados (versão 1.0)</p></font></p>
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Descrição</th>
+<th>Rastreabilidade</th>
+<th>Implementado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RF01</td>
+<td>O sistema deve possuir notícias atualizadas sobre dados demográficos/socioeconômicos do Brasil, de seus estados e municípios.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/analise_interface/#anchor_A">RFA1</a></td>
+<td>Sim</td>
+</tr>
+<tr>
+<td>RF02</td>
+<td>Sistema deve possuir uma funcionalidade de busca, que independe da tela em que o usuário se encontra.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/analise_interface/#anchor_A">RFA2</a></td>
+<td>Sim</td>
+</tr>
+<tr>
+<td>RF03</td>
+<td>Se houver algum dado/indicador atrelado à notícia lida, esse indicador deve estar presente no topo da página da notícia.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/analise_interface/#anchor_A">RFA3</a></td>
+<td>Sim</td>
+</tr>
+<tr>
+<td>RF04</td>
+<td>A notícia deve estar na aba de notícias do aplicativo.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/analise_interface/#anchor_A">RFA4</a></td>
+<td>Sim</td>
+</tr>
+<tr>
+<td>RF05</td>
+<td>O aplicativo deve possuir uma navbar inferior que permita que o usuário navegue pelas diversas funcionalidades principais da aplicação.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/analise_interface/#anchor_A">RFA5</a></td>
+<td>Sim</td>
+</tr>
+<tr>
+<td>RF06</td>
+<td>Sistema deve possuir a aba de indicadores, com principais dados do IBGE, prévia de gráfico e valor com coloração simbólica (verde/vermelha).</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/analise_interface/#anchor_A">RFA6</a>, <a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/brainstorming/#anchor_B">RFB22</a></td>
+<td>Sim</td>
+</tr>
+<tr>
+<td>RF07</td>
+<td>Ao clicar no dado, deve aparecer gráfico mais completo com evolução temporal do indicador.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/analise_interface/#anchor_A">RFA7</a></td>
+<td>Sim</td>
+</tr>
+<tr>
+<td>RF08</td>
+<td>Notícias relacionadas ao dado devem aparecer na tela do dado.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/analise_interface/#anchor_A">RFA8</a></td>
+<td>Sim</td>
+</tr>
+<tr>
+<td>RF09</td>
+<td>Ao lado do nome do indicador, deve aparecer a definição daquele indicador.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/analise_interface/#anchor_A">RFA9</a>, <a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/brainstorming/#anchor_B">RFB3</a></td>
+<td>Sim</td>
+</tr>
+<tr>
+<td>RF10</td>
+<td>Uma aba de calendário deve estar presente, com eventos/pesquisas principais do IBGE.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/analise_interface/#anchor_A">RFA10</a></td>
+<td>Sim</td>
+</tr>
+<tr>
+<td>RF11</td>
+<td>Cada dado da aba de síntese deve possuir uma fonte atrelada.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/analise_interface/#anchor_A">RFA12</a></td>
+<td>Sim</td>
+</tr>
+<tr>
+<td>RF12</td>
+<td>Uma aba de extras deve existir.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/analise_interface/#anchor_A">RFA13</a></td>
+<td>Sim</td>
+</tr>
+<tr>
+<td>RF13</td>
+<td>O sistema deve oferecer opção de controle de notificações (ativar ou desativar).</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/analise_interface/#anchor_A">RFA14</a></td>
+<td>Sim</td>
+</tr>
+<tr>
+<td>RF14</td>
+<td>O sistema deve notificar o usuário sobre novas notícias.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/analise_interface/#anchor_A">RFA15</a></td>
+<td>Sim</td>
+</tr>
+<tr>
+<td>RF15</td>
+<td>Deve haver uma opção de avaliação do aplicativo com coleta de perfil, satisfação, funcionalidades mais usadas e sugestões.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/analise_interface/#anchor_A">RFA16</a></td>
+<td>Sim</td>
+</tr>
+<tr>
+<td>RF16</td>
+<td>Deve haver uma opção de compartilhar o aplicativo.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/analise_interface/#anchor_A">RFA17</a></td>
+<td>Sim</td>
+</tr>
+<tr>
+<td>RF17</td>
+<td>Uma opção de suporte deve existir, com ligação ao site do IBGE.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/analise_interface/#anchor_A">RFA18</a></td>
+<td>Sim</td>
+</tr>
+<tr>
+<td>RF18</td>
+<td>As redes sociais do IBGE devem ser linkadas.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/analise_interface/#anchor_A">RFA19</a></td>
+<td>Sim</td>
+</tr>
+<tr>
+<td>RF19</td>
+<td>As notícias devem ser compartilháveis.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/analise_interface/#anchor_A">RFA20</a></td>
+<td>Sim</td>
+</tr>
+<tr>
+<td>RF20</td>
+<td>No calendário, os dias com evento/pesquisa devem ter cor diferente dos demais.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/analise_interface/#anchor_A">RFA21</a></td>
+<td>Sim</td>
+</tr>
+<tr>
+<td>RF21</td>
+<td>O calendário deve permitir visualização de meses passados e futuros em relação ao mês atual.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/analise_interface/#anchor_A">RFA22</a></td>
+<td>Sim</td>
+</tr>
+<tr>
+<td>RF22</td>
+<td>Na aba “síntese”, dados como gentílico, área territorial, população, renda, orçamento, IDH, matrículas, salário médio, PIB per capita e mortalidade infantil devem estar disponíveis por estado e município.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/analise_interface/#anchor_A">RFA23</a></td>
+<td>Sim</td>
+</tr>
+<tr>
+<td>RF23</td>
+<td>Filtros por país, estado e município devem estar disponíveis na aba “síntese”.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/analise_interface/#anchor_A">RFA24</a>, <a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/brainstorming/#anchor_B">RFB9</a></td>
+<td>Sim</td>
+</tr>
+<tr>
+<td>RF24</td>
+<td>Jogos educativos sobre geografia, demografia e temas sociais.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/brainstorming/#anchor_B">RFB1</a></td>
+<td>Não</td>
+</tr>
+<tr>
+<td>RF25</td>
+<td>Modo offline para uso do aplicativo sem conexão com a internet.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/brainstorming/#anchor_B">RFB2</a></td>
+<td>Não</td>
+</tr>
+<tr>
+<td>RF26</td>
+<td>Central de Ajuda dentro do app, com informações sobre o uso do aplicativo</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/brainstorming/#anchor_B">RFB6</a></td>
+<td>Não</td>
+</tr>
+<tr>
+<td>RF27</td>
+<td>Notificações para notícias relevantes e atualizações dos indicadores favoritos.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/brainstorming/#anchor_B">RFB7</a></td>
+<td>Não</td>
+</tr>
+<tr>
+<td>RF28</td>
+<td>O usuário pode favoritar indicadores e visualizar as últimas atualizações.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/brainstorming/#anchor_B">RFB8</a></td>
+<td>Não</td>
+</tr>
+<tr>
+<td>RF29</td>
+<td>Comparativo de indicadores por região.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/brainstorming/#anchor_B">RFB10</a></td>
+<td>Não</td>
+</tr>
+<tr>
+<td>RF30</td>
+<td>Possibilidade de responder a questionários relacionados ao censo diretamente pelo app.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/brainstorming/#anchor_B">RFB11</a></td>
+<td>Não</td>
+</tr>
+<tr>
+<td>RF31</td>
+<td>Possibilidade de realizar e preencher questionários diretamente no aplicativo.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/brainstorming/#anchor_B">RFB12</a></td>
+<td>Não</td>
+</tr>
+<tr>
+<td>RF32</td>
+<td>Integração com outras fontes como sites ou APIs externas (ex: dados de transporte público).</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/brainstorming/#anchor_B">RFB15</a></td>
+<td>Não</td>
+</tr>
+<tr>
+<td>RF33</td>
+<td>Acesso a dados de diferentes fontes como o IBGE, através do app.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/brainstorming/#anchor_B">RFB16</a></td>
+<td>Não</td>
+</tr>
+<tr>
+<td>RF34</td>
+<td>Mapas interativos, com visualização de dados geográficos e demográficos.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/brainstorming/#anchor_B">RFB17</a>, <a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/brainstorming/#anchor_B">RFB19</a></td>
+<td>Não</td>
+</tr>
+<tr>
+<td>RF35</td>
+<td>Possibilidade de filtro por tipo de dado.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/brainstorming/#anchor_B">RFB18</a></td>
+<td>Não</td>
+</tr>
+<tr>
+<td>RF36</td>
+<td>Possibilidade de exportar gráficos e resumos em formatos como PDF.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/brainstorming/#anchor_B">RFB20</a></td>
+<td>Não</td>
+</tr>
+<tr>
+<td>RF37</td>
+<td>Computar informações de dados e gerar relatórios para exportação.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/brainstorming/#anchor_B">RFB21</a></td>
+<td>Não</td>
+</tr>
+<tr>
+<td>RF38</td>
+<td>O sistema deve apresentar os indicadores sociais e agropecuários.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/introspeccao/#anchor_I">RFI1</a></td>
+<td>Não</td>
+</tr>
+<tr>
+<td>RF39</td>
+<td>O sistema deve filtrar notícias por região e/ou tempo.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/introspeccao/#anchor_I">RFI2</a></td>
+<td>Não</td>
+</tr>
+<tr>
+<td>RF40</td>
+<td>O sistema deve apresentar mais dados na seção síntese para os respectivos locais (estado, município), como IDH, total de veículos, governante, entre outros, semelhante ao site de referência.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/introspeccao/#anchor_I">RFI3</a></td>
+<td>Não</td>
+</tr>
+<tr>
+<td>RF41</td>
+<td>O sistema deve exibir conteúdos produzidos para outras plataformas, como YouTube, TikTok e Instagram, em uma aba dedicada.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/introspeccao/#anchor_I">RFI4</a></td>
+<td>Não</td>
+</tr>
+<tr>
+<td>RF42</td>
+<td>O sistema deve analisar os conteúdos acessados pelo usuário para recomendar conteúdos similares.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/introspeccao/#anchor_I">RFI5</a></td>
+<td>Não</td>
+</tr>
+<tr>
+<td>RF43</td>
+<td>O sistema deve permitir a comparação dos censos realizados em diferentes anos.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/introspeccao/#anchor_I">RFI6</a></td>
+<td>Não</td>
+</tr>
+<tr>
+<td>RF44</td>
+<td>O sistema deve exibir uma confirmação sobre a identidade do recenseador.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/introspeccao/#anchor_I">RFI7</a></td>
+<td>Não</td>
+</tr>
+<tr>
+<td>RF45</td>
+<td>O sistema deve realizar estudos preditivos com base nos dados atuais.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/introspeccao/#anchor_I">RFI8</a></td>
+<td>Não</td>
+</tr>
+<tr>
+<td>RF46</td>
+<td>O sistema deve informar quais fatores influenciam o aumento ou a diminuição de determinado indicador.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/introspeccao/#anchor_I">RFI9</a></td>
+<td>Não</td>
+</tr>
+<tr>
+<td>RF47</td>
+<td>O sistema deve indicar políticas públicas com base na análise dos dados adquiridos.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/introspeccao/#anchor_I">RFI10</a></td>
+<td>Não</td>
+</tr>
+<tr>
+<td>RF48</td>
+<td>O sistema deve comparar os locais com maior e menor taxa de resposta ao censo.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/introspeccao/#anchor_I">RFI11</a></td>
+<td>Não</td>
+</tr>
+<tr>
+<td>RF49</td>
+<td>Compartilhamento de métricas do aplicativo com a fonte atrelada ao IBGE</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/questionario/#anchor_Q">RFQ01</a></td>
+<td>Não</td>
+</tr>
+<tr>
+<td>RF50</td>
+<td>Possibilidade de realizar o próximo censo pelo aplicativo</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/brainstorming/#anchor_B">RFB13</a>, <a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/brainstorming/#anchor_B">RFB14</a>, <a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/questionario/#anchor_Q">RFQ04</a></td>
+<td>Não</td>
+</tr>
+<tr>
+<td>RF51</td>
+<td>Opção de modo noturno</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/brainstorming/#anchor_B">RFB4</a>, <a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/entrevista/#anchor_E">RFE10</a>, <a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/questionario/#anchor_Q">RFQ06</a></td>
+<td>Não</td>
+</tr>
+<tr>
+<td>RF52</td>
+<td>Opção de mudança de idiomas (Português, Inglês, Espanhol)</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/questionario/#anchor_Q">RFQ07</a></td>
+<td>Não</td>
+</tr>
+<tr>
+<td>RF53</td>
+<td>Opção de alterar o tamanho da fonte (com botão)</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/brainstorming/#anchor_B">RFB5</a>, <a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/entrevista/#anchor_E">RFE11</a>, <a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/questionario/#anchor_Q">RFQ08</a></td>
+<td>Não</td>
+</tr>
+<tr>
+<td>RF54</td>
+<td>Opção de alto contraste do aplicativo (com botão)</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/brainstorming/#anchor_B">RFB5</a>, <a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/entrevista/#anchor_E">RFE11</a>, <a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/questionario/#anchor_Q">RFQ09</a></td>
+<td>Não</td>
+</tr>
+<tr>
+<td>RF55</td>
+<td>O sistema deve permitir busca refinada por dados e publicações.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/entrevista/#anchor_E">RFE01</a></td>
+<td>Não</td>
+</tr>
+<tr>
+<td>RF56</td>
+<td>O sistema deve disponibilizar explicações simplificadas sobre os termos técnicos.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/entrevista/#anchor_E">RFE02</a></td>
+<td>Não</td>
+</tr>
+<tr>
+<td>RF57</td>
+<td>O sistema deve integrar-se com a conta Gov.br.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/brainstorming/#anchor_B">RFB23</a>, <a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/entrevista/#anchor_E">RFE03</a></td>
+<td>Não</td>
+</tr>
+<tr>
+<td>RF58</td>
+<td>O sistema deve permitir o compartilhamento de gráficos com link da fonte.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/entrevista/#anchor_E">RFE04</a></td>
+<td>Não</td>
+</tr>
+<tr>
+<td>RF59</td>
+<td>O sistema deve permitir a consulta a dados demográficos e indicadores por nível territorial detalhado.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/analise_interface/#anchor_A">RFA11</a>, <a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/entrevista/#anchor_E">RFE05</a></td>
+<td>Sim</td>
+</tr>
+<tr>
+<td>RF60</td>
+<td>O sistema deve possuir uma FAQ com respostas às dúvidas mais comuns.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/entrevista/#anchor_E">RFE05</a></td>
+<td>Não</td>
+</tr>
+<tr>
+<td>RF61</td>
+<td>O sistema deve apresentar os dados do Censo de forma visual e interativa (ex: infográficos, gráficos).</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/entrevista/#anchor_E">RFE07</a></td>
+<td>Não</td>
+</tr>
+<tr>
+<td>RF62</td>
+<td>O sistema deve permitir acesso às publicações completas de cada pesquisa com a metodologia detalhada.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/entrevista/#anchor_E">RFE08</a></td>
+<td>Não</td>
+</tr>
+<tr>
+<td>RF63</td>
+<td>O sistema deve integrar todos ou a maioria dos aplicativos utilizados na coleta de dados de pesquisas.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/entrevista/#anchor_E">RFE09</a></td>
+<td>Não</td>
+</tr>
+<tr>
+<td>RNF01</td>
+<td>O sistema deve estar disponível de forma estável, sem travamentos ou quedas frequentes.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/entrevista/#anchor_EN">RNFE01</a></td>
+<td>Sim</td>
+</tr>
+<tr>
+<td>RNF02</td>
+<td>O sistema deve permitir uso fluido tanto em computadores quanto em dispositivos móveis.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/entrevista/#anchor_EN">RNFE02</a></td>
+<td>Sim</td>
+</tr>
+<tr>
+<td>RNF03</td>
+<td>O sistema deve ser compatível com ferramentas de acessibilidade (áudio, Libras).</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/entrevista/#anchor_EN">RNFE04</a></td>
+<td>Parcialmente</td>
+</tr>
+<tr>
+<td>RNF04</td>
+<td>O sistema deve garantir que usuários com baixo letramento estatístico consigam utilizar a interface.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/elicitacao/tecnicas_selecionadas/entrevista/#anchor_EN">RNFE05</a></td>
+<td>Não</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+<p><font size="2"><p style="text-align: center">Fonte: <a href="https://github.com/maymarquee">Mayara Marques</a>, 2025.</p></font></p>
+<h4 id="32-requisitos-nao-funcionais-elicitados-versao-20">3.2 Requisitos Não Funcionais Elicitados Versão 2.0</h4>
+<div style="text-align: justify; text-indent: 2cm;"> A segunda versão dos Requisitos Não Funcionais (versão 2.1) foi elaborada a partir das informações sistematizadas na <a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/">Especificação Suplementar</a> do sistema. Esse artefato permitiu identificar, refinar e reorganizar os RNFs com base em critérios de qualidade, desempenho, segurança, usabilidade, acessibilidade, entre outros aspectos essenciais. O conteúdo da Especificação Suplementar serviu como referência principal para consolidar os requisitos não funcionais de forma mais clara, objetiva e alinhada às necessidades do sistema e às diretrizes institucionais do IBGE. </div>
+
+<p><font size="3"><p style="text-align: center">Tabela 2: Requisitos Não Funcionais Elicitados (versão 2.0)</p></font></p>
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Descrição</th>
+<th>Rastreabilidade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RNF01</td>
+<td>O sistema deve manter um padrão de cores, fontes, botões e posicionamento dos elementos da interface em todas as telas, garantindo consistência visual.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF01</a></td>
+</tr>
+<tr>
+<td>RNF02</td>
+<td>Toda ação realizada pelo usuário deve gerar um feedback visual ou sonoro imediato, para garantir que o usuário compreenda o resultado da sua interação.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF02</a></td>
+</tr>
+<tr>
+<td>RNF03</td>
+<td>O sistema deve permitir a alteração do tamanho da fonte em toda a interface.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF03</a></td>
+</tr>
+<tr>
+<td>RNF04</td>
+<td>O sistema deve oferecer a opção de ativar o modo noturno, alterando o esquema de cores para tons escuros.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF04</a></td>
+</tr>
+<tr>
+<td>RNF05</td>
+<td>Um novo usuário deve ser capaz de realizar as tarefas principais em até 5 minutos de uso do aplicativo, sem necessidade de ajuda externa.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF05</a></td>
+</tr>
+<tr>
+<td>RNF06</td>
+<td>A interface do aplicativo deve se adaptar corretamente a diferentes tamanhos de tela e resoluções, garantindo boa visualização em smartphones, tablets e outros dispositivos.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF06</a></td>
+</tr>
+<tr>
+<td>RNF07</td>
+<td>O sistema deve informar o usuário, em tempo real, sobre o andamento de processos como carregamento de dados, envio de formulários ou sincronização, por meio de barras de progresso, ícones animados ou mensagens de status.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF07</a></td>
+</tr>
+<tr>
+<td>RNF08</td>
+<td>O usuário deve poder desfazer ou refazer ações como desfavoritar indicadores, redefinir filtros ou cancelar comandos, evitando que erros exijam reinício completo da interação.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF08</a></td>
+</tr>
+<tr>
+<td>RNF09</td>
+<td>O sistema deve alertar o usuário antes de realizar ações críticas, e evitar campos que possam ser preenchidos incorretamente sem validação.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF09</a></td>
+</tr>
+<tr>
+<td>RNF10</td>
+<td>O sistema deve apresentar tempo médio entre falhas (MTBF - Mean Time Between Failures) superior a 100 horas de uso contínuo.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF10</a></td>
+</tr>
+<tr>
+<td>RNF11</td>
+<td>O aplicativo deve ser capaz de recuperar automaticamente sessões interrompidas devido a quedas de conexão ou falhas inesperadas.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF11</a></td>
+</tr>
+<tr>
+<td>RNF12</td>
+<td>Em caso de falha, o sistema deve registrar o erro localmente e sincronizar com o servidor assim que houver conexão, para fins de diagnóstico e correção.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF12</a></td>
+</tr>
+<tr>
+<td>RNF13</td>
+<td>O aplicativo deve manter a integridade dos dados mesmo em casos de encerramento abrupto ou desligamento inesperado do dispositivo.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF13</a></td>
+</tr>
+<tr>
+<td>RNF14</td>
+<td>O sistema deve oferecer mensagens de erro compreensíveis e orientações claras para o usuário em caso de falhas, sem exibir códigos técnicos confusos.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF14</a></td>
+</tr>
+<tr>
+<td>RNF15</td>
+<td>A comunicação entre o aplicativo e os servidores do IBGE deve utilizar protocolos seguros (ex: HTTPS), garantindo a confiabilidade na transferência de dados.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF15</a></td>
+</tr>
+<tr>
+<td>RNF16</td>
+<td>O aplicativo deve passar por testes de estresse e de carga para garantir seu funcionamento estável mesmo com picos de acesso simultâneo.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF16</a></td>
+</tr>
+<tr>
+<td>RNF17</td>
+<td>O sistema deve garantir interoperabilidade com diferentes versões dos principais sistemas operacionais móveis (Android e iOS), mantendo a estabilidade entre atualizações.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF17</a></td>
+</tr>
+<tr>
+<td>RNF18</td>
+<td>O sistema deve apresentar tempo de resposta inferior a 2 segundos para carregamento de telas principais, como visualização de notícias, dados e gráficos.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF18</a></td>
+</tr>
+<tr>
+<td>RNF19</td>
+<td>O aplicativo deve utilizar no máximo 40% da CPU do dispositivo durante operações de uso intenso, como filtros de dados ou geração de gráficos.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF19</a></td>
+</tr>
+<tr>
+<td>RNF20</td>
+<td>O consumo de memória RAM pelo aplicativo não deve ultrapassar 250 MB em uso comum, garantindo desempenho mesmo em smartphones intermediários.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF20</a></td>
+</tr>
+<tr>
+<td>RNF21</td>
+<td>O aplicativo deve estar disponível para acesso 99,5% do tempo ao longo do mês, considerando atualizações, falhas e manutenções.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF21</a></td>
+</tr>
+<tr>
+<td>RNF22</td>
+<td>O sistema deve suportar pelo menos 5.000 acessos simultâneos sem degradação perceptível de desempenho.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF22</a></td>
+</tr>
+<tr>
+<td>RNF23</td>
+<td>O tempo de sincronização de dados com o servidor não deve ultrapassar 5 segundos em redes 4G ou superiores.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF23</a></td>
+</tr>
+<tr>
+<td>RNF24</td>
+<td>A navegação entre seções do app (como estatísticas, indicadores e notícias) deve ocorrer com transições de no máximo 1 segundo para garantir fluidez na experiência do usuário.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF24</a></td>
+</tr>
+<tr>
+<td>RNF25</td>
+<td>O sistema deve realizar compressão de dados para reduzir o tempo de carregamento de conteúdo, principalmente em conexões móveis com baixa velocidade.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF25</a></td>
+</tr>
+<tr>
+<td>RNF26</td>
+<td>O desempenho do aplicativo deve ser validado em pelo menos três modelos diferentes de smartphones (baixo, médio e alto desempenho), garantindo funcionalidade mínima em cada um deles.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF26</a></td>
+</tr>
+<tr>
+<td>RNF27</td>
+<td>O sistema deve estar em conformidade com a LGPD (Lei nº 13.709/2018), assegurando o tratamento seguro, legal e transparente dos dados pessoais coletados.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF27</a></td>
+</tr>
+<tr>
+<td>RNF28</td>
+<td>O sistema deve criptografar todos os dados pessoais transmitidos utilizando TLS 1.2 ou superior.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF28</a></td>
+</tr>
+<tr>
+<td>RNF29</td>
+<td>O sistema deve criptografar todos os dados pessoais armazenados utilizando algoritmos robustos como AES-256.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF29</a></td>
+</tr>
+<tr>
+<td>RNF30</td>
+<td>O sistema deve exibir uma política de privacidade clara ao usuário antes do início do preenchimento do Censo.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF30</a></td>
+</tr>
+<tr>
+<td>RNF31</td>
+<td>O sistema deve registrar o consentimento explícito do usuário para o uso de seus dados pessoais.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF31</a></td>
+</tr>
+<tr>
+<td>RNF32</td>
+<td>O sistema deve permitir que o usuário solicite a exclusão ou correção de seus dados pessoais conforme previsto na LGPD.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF32</a></td>
+</tr>
+<tr>
+<td>RNF33</td>
+<td>O sistema deve registrar logs detalhados dos eventos de autenticação e envio de dados, incluindo data/hora, IP, status da operação e identificador do usuário.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF33</a></td>
+</tr>
+<tr>
+<td>RNF34</td>
+<td>Os logs do sistema devem ser armazenados de forma segura e imutável por no mínimo 5 anos para fins de auditoria.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF34</a></td>
+</tr>
+<tr>
+<td>RNF35</td>
+<td>O acesso aos logs deve ser restrito a usuários autorizados com controle de acesso baseado em perfis.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF35</a></td>
+</tr>
+<tr>
+<td>RNF36</td>
+<td>O sistema deve permitir a geração de relatórios de auditoria sob demanda.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF36</a></td>
+</tr>
+<tr>
+<td>RNF37</td>
+<td>O sistema deve realizar backups automáticos dos dados críticos diariamente, com retenção mínima de 30 dias e possibilidade de restauração em até 24 horas.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF37</a></td>
+</tr>
+<tr>
+<td>RNF38</td>
+<td>O design visual do aplicativo deve preservar a identidade visual do IBGE, incluindo uso das cores institucionais e logotipo oficial.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF38</a></td>
+</tr>
+<tr>
+<td>RNF39</td>
+<td>O sistema deve seguir o princípio da responsividade, adaptando-se automaticamente a diferentes tamanhos e orientações de tela.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF39</a></td>
+</tr>
+<tr>
+<td>RNF40</td>
+<td>Todas as decisões de design devem priorizar a simplicidade e clareza na interação com dados estatísticos, evitando sobrecarga cognitiva no usuário.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF40</a></td>
+</tr>
+<tr>
+<td>RNF41</td>
+<td>A experiência do usuário deve ser priorizada, com foco em fluxos intuitivos e navegação direta, minimizando a quantidade de cliques até a informação desejada.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF41</a></td>
+</tr>
+<tr>
+<td>RNF42</td>
+<td>O design da informação deve facilitar a interpretação de gráficos, mapas e tabelas, com uso de legendas claras, cores contrastantes e ícones intuitivos.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF42</a></td>
+</tr>
+<tr>
+<td>RNF43</td>
+<td>O sistema deve prever escalabilidade de design para inclusão futura de novos tipos de dados, filtros e relatórios sem comprometer a estrutura atual.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF43</a></td>
+</tr>
+<tr>
+<td>RNF44</td>
+<td>O aplicativo deve estar apto a funcionar de forma offline para consulta de dados previamente sincronizados, com atualização automática quando a conexão for restabelecida.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF44</a></td>
+</tr>
+<tr>
+<td>RNF45</td>
+<td>O aplicativo deve ser desenvolvido utilizando tecnologias compatíveis com dispositivos Android e iOS.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF45</a></td>
+</tr>
+<tr>
+<td>RNF46</td>
+<td>O código-fonte deve seguir boas práticas de programação, com uso de versionamento (ex: Git) e documentação de métodos.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF46</a></td>
+</tr>
+<tr>
+<td>RNF47</td>
+<td>O sistema deve ser compatível com bibliotecas gráficas modernas para renderização de gráficos estatísticos.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF47</a></td>
+</tr>
+<tr>
+<td>RNF48</td>
+<td>O aplicativo deverá utilizar frameworks responsivos que permitam adaptação automática a diferentes tamanhos de tela.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF48</a></td>
+</tr>
+<tr>
+<td>RNF49</td>
+<td>O tempo de inicialização do aplicativo não deve ultrapassar 3 segundos em dispositivos de entrada compatível.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF49</a></td>
+</tr>
+<tr>
+<td>RNF50</td>
+<td>O aplicativo deve ser projetado com arquitetura modular, facilitando futuras manutenções e atualizações.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF50</a></td>
+</tr>
+<tr>
+<td>RNF51</td>
+<td>O aplicativo deve conter uma seção de ajuda acessível a partir do menu principal, com instruções claras de uso.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF51</a></td>
+</tr>
+<tr>
+<td>RNF52</td>
+<td>A documentação do usuário deve estar disponível online e acessível por meio de link no próprio aplicativo.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF52</a></td>
+</tr>
+<tr>
+<td>RNF53</td>
+<td>A seção de ajuda deve conter tópicos de perguntas frequentes (FAQ) e tutoriais passo a passo ilustrados.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF53</a></td>
+</tr>
+<tr>
+<td>RNF54</td>
+<td>O conteúdo de ajuda deve ser escrito em linguagem simples, adequada ao público-alvo geral e não técnico.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF54</a></td>
+</tr>
+<tr>
+<td>RNF55</td>
+<td>A documentação online deve ser responsiva e acessível em diferentes dispositivos (mobile, tablet e desktop).</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF55</a></td>
+</tr>
+<tr>
+<td>RNF56</td>
+<td>O sistema deve permitir atualizações periódicas da documentação, sem necessidade de atualização do aplicativo principal.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF56</a></td>
+</tr>
+<tr>
+<td>RNF57</td>
+<td>O aplicativo deve exibir os termos de uso e política de privacidade no primeiro acesso do usuário.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#48-requisitos-de-sistema-de-ajuda-e-de-documentacao-de-usuario-online">RNF57</a></td>
+</tr>
+<tr>
+<td>RNF58</td>
+<td>Todo o conteúdo de dados estatísticos deve respeitar as licenças de uso e atribuição do IBGE.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#412-requisitos-de-interface">RNF58</a></td>
+</tr>
+<tr>
+<td>RNF59</td>
+<td>O software deve ser disponibilizado sob uma licença de código aberto compatível com uso governamental (ex: MIT, GPL).</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#412-requisitos-de-interface">RNF59</a></td>
+</tr>
+<tr>
+<td>RNF60</td>
+<td>Componentes de terceiros utilizados no aplicativo devem estar devidamente licenciados e creditados.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#412-requisitos-de-interface">RNF60</a></td>
+</tr>
+<tr>
+<td>RNF61</td>
+<td>O uso do aplicativo será gratuito e restrito apenas a fins informativos e educacionais, conforme normas institucionais.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#412-requisitos-de-interface">RNF61</a></td>
+</tr>
+<tr>
+<td>RNF62</td>
+<td>O sistema deve respeitar as leis brasileiras vigentes relacionadas à proteção de dados, propriedade intelectual, acessibilidade digital e direitos do consumidor.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#412-requisitos-de-interface">RNF62</a></td>
+</tr>
+<tr>
+<td>RNF63</td>
+<td>Todos os conteúdos exibidos (textos, imagens, gráficos e dados estatísticos) devem conter as devidas citações e fontes.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#412-requisitos-de-interface">RNF63</a></td>
+</tr>
+<tr>
+<td>RNF64</td>
+<td>O código-fonte e os componentes do sistema devem respeitar as licenças de software utilizadas, evitando o uso de bibliotecas sem permissão legal.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#412-requisitos-de-interface">RNF64</a></td>
+</tr>
+<tr>
+<td>RNF65</td>
+<td>A distribuição do aplicativo deve incluir os termos de uso e a política de privacidade acessíveis diretamente na tela inicial e dentro do menu de configurações.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#412-requisitos-de-interface">RNF65</a></td>
+</tr>
+<tr>
+<td>RNF66</td>
+<td>O sistema deve garantir a acessibilidade mínima conforme, conforme exigido pela legislação brasileira.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#412-requisitos-de-interface">RNF66</a></td>
+</tr>
+<tr>
+<td>RNF67</td>
+<td>O uso do nome, logotipo e identidade visual do IBGE deve seguir as diretrizes institucionais.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#412-requisitos-de-interface">RNF67</a></td>
+</tr>
+<tr>
+<td>RNF68</td>
+<td>O aplicativo deve ser registrado junto ao órgão responsável, quando aplicável, garantindo proteção contra uso indevido ou cópia não autorizada.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#412-requisitos-de-interface">RNF68</a></td>
+</tr>
+<tr>
+<td>RNF69</td>
+<td>Qualquer coleta de dados estatísticos anônimos para fins de melhoria do sistema deve ser previamente autorizada pelo usuário, com opção clara de recusa.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#412-requisitos-de-interface">RNF69</a></td>
+</tr>
+<tr>
+<td>RNF70</td>
+<td>eMAG - O Modelo de Acessibilidade de Governo Eletrônico define diretrizes para garantir que o sistema seja acessível a todas as pessoas, inclusive com deficiência.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#412-requisitos-de-interface">RNF70</a></td>
+</tr>
+<tr>
+<td>RNF71</td>
+<td>WCAG 2.1 (AA) - As Diretrizes de Acessibilidade para Conteúdo Web garantem que o sistema possa ser utilizado por usuários com diferentes necessidades, incluindo leitores de tela.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#412-requisitos-de-interface">RNF71</a></td>
+</tr>
+<tr>
+<td>RNF72</td>
+<td>LGPD - A Lei Geral de Proteção de Dados regula o tratamento de dados pessoais e deve ser integralmente seguida pelo sistema.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#412-requisitos-de-interface">RNF72</a></td>
+</tr>
+<tr>
+<td>RNF73</td>
+<td>ISO/IEC 27001 - Padrão internacional para gestão da segurança da informação, recomendável para proteger dados sensíveis do sistema.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#412-requisitos-de-interface">RNF73</a></td>
+</tr>
+<tr>
+<td>RNF74</td>
+<td>ABNT NBR 9241 - Norma brasileira que trata de ergonomia na interação humano-computador, aplicável à interface do sistema.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#412-requisitos-de-interface">RNF74</a></td>
+</tr>
+<tr>
+<td>RNF75</td>
+<td>Material Design ou Bootstrap - Padrões de design visual para manter consistência na interface do usuário.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#412-requisitos-de-interface">RNF75</a></td>
+</tr>
+<tr>
+<td>RNF76</td>
+<td>Licenças de Código Aberto (MIT, GPL, etc.) - O uso de bibliotecas e frameworks deve respeitar suas respectivas licenças de uso e distribuição.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#412-requisitos-de-interface">RNF76</a></td>
+</tr>
+<tr>
+<td>RNF77</td>
+<td>A interface do aplicativo deve seguir as diretrizes de design responsivo, garantindo usabilidade adequada em dispositivos móveis e tablets.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#412-requisitos-de-interface">RNF77</a></td>
+</tr>
+<tr>
+<td>RNF78</td>
+<td>Os elementos de navegação (menus, botões, ícones) devem ser intuitivos, com rótulos descritivos e acessíveis em no máximo dois toques a partir da tela inicial.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#412-requisitos-de-interface">RNF78</a></td>
+</tr>
+<tr>
+<td>RNF79</td>
+<td>Todas as telas devem possuir contraste mínimo de 4.5:1 entre texto e plano de fundo, conforme as diretrizes WCAG 2.1 de acessibilidade digital.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#412-requisitos-de-interface">RNF79</a></td>
+</tr>
+<tr>
+<td>RNF80</td>
+<td>O sistema deve apresentar feedback visual e/ou sonoro para todas as ações do usuário, como cliques, carregamentos e envios de formulários.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#412-requisitos-de-interface">RNF80</a></td>
+</tr>
+<tr>
+<td>RNF81</td>
+<td>Os textos exibidos na interface devem ser redigidos em linguagem clara e objetiva, adequada ao público geral, evitando jargões técnicos.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#412-requisitos-de-interface">RNF81</a></td>
+</tr>
+<tr>
+<td>RNF82</td>
+<td>Os formulários devem apresentar mensagens de erro específicas e orientativas, posicionadas próximas aos campos com problemas.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#412-requisitos-de-interface">RNF82</a></td>
+</tr>
+<tr>
+<td>RNF83</td>
+<td>A interface deve ser compatível com leitores de tela, permitindo navegação e interpretação completa do conteúdo por pessoas com deficiência visual.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#412-requisitos-de-interface">RNF83</a></td>
+</tr>
+<tr>
+<td>RNF84</td>
+<td>Os gráficos e mapas exibidos devem possuir alternativas textuais ou descrições acessíveis para garantir entendimento a todos os usuários.</td>
+<td><a href="https://requisitos-de-software.github.io/2025.1-IBGE/modelagem/especificacaoSuplementar/#412-requisitos-de-interface">RNF84</a></td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+<p><font size="2"><p style="text-align: center">Fonte: <a href="https://github.com/joaofmoreiraa">João Félix</a> e <a href="https://github.com/maymarquee">Mayara Marques</a>, 2025.</p></font></p>
+<h2 id="4-historico-de-versoes">4. Histórico de Versões</h2>
+<p><font size="3"><p style="text-align: center">Tabela 3: Histórico de versões</p></font></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Versão</th>
+<th style="text-align: center;">Descrição</th>
+<th style="text-align: center;">Autor</th>
+<th style="text-align: center;">Data</th>
+<th style="text-align: center;">Revisor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1.0</td>
+<td style="text-align: center;">Criação da documento</td>
+<td style="text-align: center;"><a href="https://github.com/maymarquee">Mayara Marques</a></td>
+<td style="text-align: center;">23/04/2025</td>
+<td style="text-align: center;"><a href="https://github.com/caioduart3">Caio Duarte</a></td>
+</tr>
+<tr>
+<td style="text-align: center;">1.1</td>
+<td style="text-align: center;">Inserção dos requisitos com rastreabilidade, ID e implementação</td>
+<td style="text-align: center;"><a href="https://github.com/maymarquee">Mayara Marques</a></td>
+<td style="text-align: center;">03/05/2025</td>
+<td style="text-align: center;"><a href="https://github.com/caioduart3">Caio Duarte</a></td>
+</tr>
+<tr>
+<td style="text-align: center;">2.0</td>
+<td style="text-align: center;">Adiciona nova versão de Requisitos Não Funcionais 2.0</td>
+<td style="text-align: center;"><a href="https://github.com/joaofmoreiraa">João Félix</a> e <a href="https://github.com/maymarquee">Mayara Marques</a></td>
+<td style="text-align: center;">05/06/2025</td>
+<td style="text-align: center;"><a href="https://github.com/GabrielSPinto">Gabriel Pinto</a></td>
+</tr>
+<tr>
+<td style="text-align: center;">3.0</td>
+<td style="text-align: center;">Adiciona nova versão de Requisitos Funcionais 2.0</td>
+<td style="text-align: center;"><a href="https://github.com/caioduart3">Caio Duarte</a>, <a href="https://github.com/GabrielSPinto">Gabriel Pinto</a> e <a href="https://github.com/LeticiaMonteiroo">Letícia Monteiro</a></td>
+<td style="text-align: center;">07/06/2025</td>
+<td style="text-align: center;"><a href="https://github.com/LeticiaMonteiroo">Letícia Monteiro</a></td>
+</tr>
+<tr>
+<td style="text-align: center;">3.1</td>
+<td style="text-align: center;">Adiciona nova versão de Requisitos Não Funcionais 2.1</td>
+<td style="text-align: center;"><a href="https://github.com/felixlaryssa">Larysssa Felix</a> e <a href="https://github.com/ludmilaaysha">Ludmila Nunes</a></td>
+<td style="text-align: center;">07/06/2025</td>
+<td style="text-align: center;"><a href="https://github.com/joaofmoreiraa">João Félix</a></td>
+</tr>
+<tr>
+<td style="text-align: center;">3.2</td>
+<td style="text-align: center;">Corrige erros de digitação</td>
+<td style="text-align: center;"><a href="https://github.com/ludmilaaysha">Ludmila Nunes</a></td>
+<td style="text-align: center;">08/06/2025</td>
+<td style="text-align: center;"><a href="https://github.com/felixlaryssa">Larysssa Felix</a></td>
+</tr>
+<tr>
+<td style="text-align: center;">4.0</td>
+<td style="text-align: center;">Separa os arquivos de elicitação de requesitos por versões</td>
+<td style="text-align: center;"><a href="https://github.com/GabrielSPinto">Gabriel Pinto</a></td>
+<td style="text-align: center;">14/06/2025</td>
+<td style="text-align: center;"><a href="https://github.com/maymarquee">Mayara Marques</a></td>
+</tr>
+</tbody>
+</table>
+<p><font size="2"><p style="text-align: center">Fonte: <a href="https://github.com/caioduart3">Caio Duarte</a>, <a href="https://github.com/GabrielSPinto">Gabriel Pinto</a>, <a href="https://github.com/joaofmoreiraa">João Félix</a>, <a href="https://github.com/felixlaryssa">Larysssa Felix</a>, <a href="https://github.com/LeticiaMonteiroo">Letícia Monteiro</a>, <a href="https://github.com/ludmilaaysha">Ludmila Nunes</a> e <a href="https://github.com/maymarquee">Mayara Marques</a>, 2025.</p></font></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar para o topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/Requisitos-de-Software/2025.1-Grupo05" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.tabs.link", "header.autohide", "navigation.expand", "navigation.instant", "navigation.tabs", "navigation.top", "navigation.tracking"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>

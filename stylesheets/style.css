@@ -1,0 +1,16 @@
+:root {
+    --md-primary-fg-color:        #034d84;
+    --md-primary-fg-color--light: #336fa3;
+    --md-primary-fg-color--dark:  #00345b;
+  }
+  
+  /* links */
+  .md-typeset a {
+    color: #034d84;
+  }
+
+  /* tabelas */
+.md-typeset table th {
+    background-color: #034d84;
+    color: white;
+  }

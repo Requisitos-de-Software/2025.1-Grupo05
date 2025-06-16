@@ -1,0 +1,3993 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://github.com/Requisitos-de-Software/2025.1-Grupo05/elicitacao/priorizacao_selecionadas/moscow/">
+      
+      
+        <link rel="prev" href="../first_things_first/">
+      
+      
+        <link rel="next" href="../%24100/">
+      
+      
+      <link rel="icon" href="../../../assets/logo_ibge.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
+    
+    
+      
+        <title>MoSCoW - IBGE</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.4af4bdda.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#moscow" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../../.." title="IBGE" class="md-header__button md-logo" aria-label="IBGE" data-md-component="logo">
+      
+  <img src="../../../assets/logo_ibge.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            IBGE
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              MoSCoW
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_3" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: high-contrast)" data-md-color-scheme="high-contrast" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_3">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Requisitos-de-Software/2025.1-Grupo05" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2025.1-IBGE
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Início
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../atas/ata1/" class="md-tabs__link">
+          
+  
+  
+  Atas
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../aps/ap1/ap1/" class="md-tabs__link">
+          
+  
+  
+  Apresentações
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../Planejamento/AplicativoEscolhido/" class="md-tabs__link">
+          
+  
+  
+  Planejamento
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../prerastreabilidade/rich-pic_alt/" class="md-tabs__link">
+          
+  
+  
+  Pré-rastreabilidade
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../usuarios/PerfilDoUsuario/" class="md-tabs__link">
+          
+  
+  
+  Elicitação
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../modelagem/useCases/" class="md-tabs__link">
+          
+  
+  
+  Modelagem
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../rastreabilidade/elos/" class="md-tabs__link">
+          
+  
+  
+  Pós-rastreabilidade
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../Verificacao/entrega1/lv1/" class="md-tabs__link">
+          
+  
+  
+  Inspeção
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="IBGE" class="md-nav__button md-logo" aria-label="IBGE" data-md-component="logo">
+      
+  <img src="../../../assets/logo_ibge.png" alt="logo">
+
+    </a>
+    IBGE
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Requisitos-de-Software/2025.1-Grupo05" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2025.1-IBGE
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Início
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Atas
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Atas
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../atas/ata1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../atas/ata2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../atas/ata3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 3
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../atas/ata4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 4
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../atas/ata5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 5
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../atas/ata6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 6
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../atas/ata7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 7
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Apresentações
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Apresentações
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    1ª Entrega
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            1ª Entrega
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../aps/ap1/ap1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Apresentação - 1ª entrega
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    2ª Entrega
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            2ª Entrega
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../aps/ap2/ap2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Apresentação - 2ª entrega
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    3ª Entrega
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            3ª Entrega
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../aps/ap3/ap3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Apresentação - 3ª entrega
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    4ª Entrega
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            4ª Entrega
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../aps/ap4/ap4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Apresentação - 4ª entrega
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    6ª Entrega
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            6ª Entrega
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../aps/ap6/ap6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Apresentação - 6ª entrega
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Planejamento
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Planejamento
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Planejamento/AplicativoEscolhido/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Aplicativo Escolhido
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Planejamento/Ferramentas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ferramentas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Planejamento/Metodologia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Metodologia
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Planejamento/Cronograma/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cronograma
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Pré-rastreabilidade
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Pré-rastreabilidade
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Rich Picture
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            Rich Picture
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../prerastreabilidade/rich-pic_alt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Aplicativos analisados
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../prerastreabilidade/rich-picture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Aplicativo selecionado
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Elicitação
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Elicitação
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_1" id="__nav_6_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Usuários
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_1">
+            <span class="md-nav__icon md-icon"></span>
+            Usuários
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../usuarios/PerfilDoUsuario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Perfil do Usuário
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../usuarios/Personas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Personas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tecnicas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Técnicas analisadas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Técnicas selecionadas
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3">
+            <span class="md-nav__icon md-icon"></span>
+            Técnicas selecionadas
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tecnicas_selecionadas/analise_interface/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Análise de Interface
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tecnicas_selecionadas/brainstorming/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Brainstorming
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tecnicas_selecionadas/introspeccao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introspecção
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tecnicas_selecionadas/questionario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Questionário
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tecnicas_selecionadas/entrevista/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrevista
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../priorizacao_analisadas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Técnicas de Priorização analisadas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6_5" id="__nav_6_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Técnicas de Priorização selecionadas
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6_5">
+            <span class="md-nav__icon md-icon"></span>
+            Técnicas de Priorização selecionadas
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../first_things_first/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    First Things First
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    MoSCoW
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    MoSCoW
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introducao" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Introdução
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-participantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Participantes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-metodologia" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Metodologia
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Metodologia">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-cronograma-da-priorizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 Cronograma da priorização
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-resultados" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Resultados
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-anexos" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Anexos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Anexos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-termo-de-consentimento" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 Termo de Consentimento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-registro-da-gravacao-da-tecnica" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2 Registro da Gravação da Técnica
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Referências
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-historico-de-versoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Histórico de Versões
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%24100/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    $100
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../prioriza%C3%A7%C3%A3o_por_3_n%C3%ADveis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Priorização por 3 Níveis
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../votacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Votação
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Requisitos_versoes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Requisitos Elicitados Versões Anteriores
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Requisitos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Requisitos Elicitados Oficial
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Modelagem
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Modelagem
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../modelagem/useCases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Casos de uso
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../modelagem/especificacaoSuplementar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Especificação Suplementar
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../modelagem/cenarios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cenários
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../modelagem/lexicos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Léxicos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_5" id="__nav_7_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Ágil
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_5">
+            <span class="md-nav__icon md-icon"></span>
+            Ágil
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../modelagem/agil/NFR/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    NFR Framework
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../modelagem/agil/userStories/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Histórias de Usuário
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../modelagem/agil/productBacklog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Backlog do Produto
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Pós-rastreabilidade
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Pós-rastreabilidade
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../rastreabilidade/elos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Elos de rastreabilidade
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_2" id="__nav_8_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Matrizes de Rastreabilidade
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2">
+            <span class="md-nav__icon md-icon"></span>
+            Matrizes de Rastreabilidade
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../rastreabilidade/matrizes/forwardto/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Forward To
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../rastreabilidade/matrizes/forwardfrom/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Forward From
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../rastreabilidade/matrizes/backwardfrom/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Backward From
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../rastreabilidade/matrizes/matrizgeral/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Matriz Geral
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Inspeção
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Inspeção
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_9_1" id="__nav_9_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Entrega 1
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_1">
+            <span class="md-nav__icon md-icon"></span>
+            Entrega 1
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Verificacao/entrega1/lv1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Grupo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Verificacao/entrega1/etr1_gr%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Grupo +1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Verificacao/entrega1/monitor1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Monitor
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_9_2" id="__nav_9_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Entrega 2
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_2">
+            <span class="md-nav__icon md-icon"></span>
+            Entrega 2
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Verificacao/entrega2/lv2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Grupo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Verificacao/entrega2/etr2_gr%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Grupo +1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Verificacao/entrega2/monitor2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Monitor
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_9_3" id="__nav_9_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Entrega 3
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_3">
+            <span class="md-nav__icon md-icon"></span>
+            Entrega 3
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Verificacao/entrega3/lv3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Grupo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Verificacao/entrega3/etr3_gr%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Grupo +1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_9_4" id="__nav_9_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Entrega 4
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_4">
+            <span class="md-nav__icon md-icon"></span>
+            Entrega 4
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Verificacao/entrega4/lv4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Grupo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Verificacao/entrega4/etr4_gr%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Grupo +1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_9_5" id="__nav_9_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Entrega 6
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_5">
+            <span class="md-nav__icon md-icon"></span>
+            Entrega 6
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Verificacao/entrega6/lv6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Grupo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Verificacao/entrega6/etr6_gr%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Grupo +1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introducao" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Introdução
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-participantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Participantes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-metodologia" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Metodologia
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Metodologia">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-cronograma-da-priorizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 Cronograma da priorização
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-resultados" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Resultados
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-anexos" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Anexos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Anexos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-termo-de-consentimento" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 Termo de Consentimento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-registro-da-gravacao-da-tecnica" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2 Registro da Gravação da Técnica
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Referências
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-historico-de-versoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Histórico de Versões
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="moscow">MoSCoW</h1>
+<h2 id="1-introducao">1. Introdução</h2>
+<div style="text-align: justify; text-indent: 2cm;">Durante o processo de elicitação de requisitos para o sistema voltado ao apoio das atividades do IBGE, tornou-se essencial estabelecer uma hierarquia de importância entre os requisitos levantados. Para isso, foi aplicada a técnica de priorização conhecida como <b>técnica MoSCoW</b>, conforme descrita no material didático utilizado na disciplina, disponível em <i>Sales (2025)</i>.</div>
+
+<div style="text-align: justify; text-indent: 2cm;">Essa técnica é amplamente utilizada em projetos de desenvolvimento de software, permitindo que os stakeholders classifiquem os requisitos com base em sua importância e urgência. A técnica MoSCoW oferece uma abordagem clara e estruturada para categorizar os requisitos em diferentes níveis de prioridade:</div>
+
+<ul>
+<li><strong>Must have (M):</strong> funcionalidades essenciais, cuja ausência inviabiliza o uso do sistema;</li>
+<li><strong>Should have (S):</strong> requisitos importantes, mas não críticos para a operação mínima;</li>
+<li><strong>Could have (C):</strong> funcionalidades desejáveis, que agregam valor se implementadas;</li>
+<li><strong>Won’t have (W):</strong> itens que não serão tratados nesta versão, mas que podem ser considerados no futuro.</li>
+</ul>
+<h2 id="2-participantes">2. Participantes</h2>
+<div style="text-align: justify; text-indent: 2cm;">Para aplicação da técnica, foram definidos dois participantes com perfis distintos e relevantes ao contexto de uso do sistema. <b>Clístenes Mendonça</b>, atualmente cursando mestrado na Escola Nacional de Saúde Pública (Fiocruz) e atuando como servidor público da Secretaria de Estado da Saúde do Distrito Federal (SES-DF), foi selecionado como representante do público-alvo. Seu conhecimento sobre as demandas informacionais em políticas públicas e institucionais contribuiu para uma avaliação alinhada às necessidades reais dos usuários. Já <b>Gabriel Pinto</b> atuou como mediador do processo, sendo responsável por orientar a aplicação da técnica, esclarecer dúvidas e organizar os resultados.</div>
+
+<h2 id="3-metodologia">3. Metodologia</h2>
+<div style="text-align: justify; text-indent: 2cm;">A técnica de priorização MoSCoW foi aplicada com o objetivo de classificar os requisitos do sistema segundo o grau de importância percebido pelo usuário final. O participante <b>Clístenes Mendonça</b> foi responsável por realizar a priorização com base em sua experiência em políticas públicas e uso de dados institucionais.</div>
+
+<div style="text-align: justify; text-indent: 2cm;">Cada requisito foi apresentado individualmente, e então classificado por Clístenes em uma das quatro categorias da técnica MoSCoW: <i>Must have</i> (deve ter), <i>Should have</i> (deveria ter), <i>Could have</i> (poderia ter) ou <i>Won’t have</i> (não terá por agora). Essa categorização permitiu identificar quais funcionalidades são essenciais para o funcionamento mínimo do sistema e quais podem ser planejadas para versões futuras.</div>
+
+<div style="text-align: justify; text-indent: 2cm;">O mediador <b>Gabriel Pinto</b> conduziu a sessão, explicando os critérios da técnica MoSCoW, esclarecendo dúvidas durante a análise e registrando as classificações atribuídas. Os resultados foram consolidados em uma tabela, servindo como base para o planejamento das próximas fases do desenvolvimento.</div>
+
+<h3 id="31-cronograma-da-priorizacao">3.1 Cronograma da priorização</h3>
+<div style="text-align: justify; text-indent: 2cm;">
+O cronograma dessa elicitação, junto com a função de cada um presente na priorização está apresentada na tabela 1: 
+</div>
+
+<p><font size="3"><p style="text-align: center">Tabela 1: Cronograma da priorização.</p></font></p>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Data</th>
+<th>Hora</th>
+<th>Função</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Gabriel Pinto</td>
+<td>03/05/2025</td>
+<td>19:00</td>
+<td>Mediador</td>
+</tr>
+<tr>
+<td>Clístene Mendonça</td>
+<td>03/05/2025</td>
+<td>21:00</td>
+<td>Cliente</td>
+</tr>
+</tbody>
+</table>
+<p><font size="2"><p style="text-align: center">Fonte: Gabriel Pinto, 2025</p></font></p>
+<h2 id="4-resultados">4. Resultados</h2>
+<div style="text-align: justify; text-indent: 2cm;">
+Para apoiar a priorização dos requisitos do sistema, aplicou-se a técnica MoSCoW, que os classifica em quatro categorias conforme sua importância. A Tabela 2 apresenta os requisitos distribuídos segundo essa abordagem, servindo de base para decisões estratégicas no desenvolvimento.
+</div>
+
+<p><font size="3"><p style="text-align: center">Tabela 2: Resultados da priorização dos requisitos.</p></font></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">ID</th>
+<th style="text-align: left;">Descrição</th>
+<th style="text-align: left;">Implementado</th>
+<th style="text-align: left;">Priorização MoSCoW</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">RF01</td>
+<td style="text-align: left;">O sistema deve possuir notícias atualizadas sobre dados demográficos/socioeconômicos do Brasil, de seus estados e municípios.</td>
+<td style="text-align: left;">Sim</td>
+<td style="text-align: left;">Must have (deve ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF02</td>
+<td style="text-align: left;">Sistema deve possuir uma funcionalidade de busca, que independe da tela em que o usuário se encontra.</td>
+<td style="text-align: left;">Sim</td>
+<td style="text-align: left;">Must have (deve ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF03</td>
+<td style="text-align: left;">Se houver algum dado/indicador atrelado à notícia lida, esse indicador deve estar presente no topo da página da notícia.</td>
+<td style="text-align: left;">Sim</td>
+<td style="text-align: left;">Must have (deve ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF04</td>
+<td style="text-align: left;">A notícia deve estar na aba de notícias do aplicativo.</td>
+<td style="text-align: left;">Sim</td>
+<td style="text-align: left;">Must have (deve ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF05</td>
+<td style="text-align: left;">O aplicativo deve possuir uma navbar inferior que permita que o usuário navegue pelas diversas funcionalidades principais da aplicação.</td>
+<td style="text-align: left;">Sim</td>
+<td style="text-align: left;">Must have (deve ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF06</td>
+<td style="text-align: left;">Sistema deve possuir a aba de indicadores, com principais dados do IBGE, prévia de gráfico e valor com coloração simbólica (verde/vermelha).</td>
+<td style="text-align: left;">Sim</td>
+<td style="text-align: left;">Must have (deve ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF07</td>
+<td style="text-align: left;">Ao clicar no dado, deve aparecer gráfico mais completo com evolução temporal do indicador.</td>
+<td style="text-align: left;">Sim</td>
+<td style="text-align: left;">Should have (deveria ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF08</td>
+<td style="text-align: left;">Notícias relacionadas ao dado devem aparecer na tela do dado.</td>
+<td style="text-align: left;">Sim</td>
+<td style="text-align: left;">Should have (deveria ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF09</td>
+<td style="text-align: left;">Ao lado do nome do indicador, deve aparecer a definição daquele indicador.</td>
+<td style="text-align: left;">Sim</td>
+<td style="text-align: left;">Should have (deveria ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF10</td>
+<td style="text-align: left;">Uma aba de calendário deve estar presente, com eventos/pesquisas principais do IBGE.</td>
+<td style="text-align: left;">Sim</td>
+<td style="text-align: left;">Should have (deveria ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF11</td>
+<td style="text-align: left;">Cada dado da aba de síntese deve possuir uma fonte atrelada.</td>
+<td style="text-align: left;">Sim</td>
+<td style="text-align: left;">Could have (poderia ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF12</td>
+<td style="text-align: left;">Uma aba de extras deve existir.</td>
+<td style="text-align: left;">Sim</td>
+<td style="text-align: left;">Should have (deveria ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF13</td>
+<td style="text-align: left;">O sistema deve oferecer opção de controle de notificações (ativar ou desativar).</td>
+<td style="text-align: left;">Sim</td>
+<td style="text-align: left;">Must have (deve ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF14</td>
+<td style="text-align: left;">O sistema deve notificar o usuário sobre novas notícias.</td>
+<td style="text-align: left;">Sim</td>
+<td style="text-align: left;">Should have (deveria ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF15</td>
+<td style="text-align: left;">Deve haver uma opção de avaliação do aplicativo com coleta de perfil, satisfação, funcionalidades mais usadas e sugestões.</td>
+<td style="text-align: left;">Sim</td>
+<td style="text-align: left;">Must have (deve ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF16</td>
+<td style="text-align: left;">Deve haver uma opção de compartilhar o aplicativo.</td>
+<td style="text-align: left;">Sim</td>
+<td style="text-align: left;">Should have (deveria ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF17</td>
+<td style="text-align: left;">Uma opção de suporte deve existir, com ligação ao site do IBGE.</td>
+<td style="text-align: left;">Sim</td>
+<td style="text-align: left;">Must have (deve ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF18</td>
+<td style="text-align: left;">As redes sociais do IBGE devem ser linkadas.</td>
+<td style="text-align: left;">Sim</td>
+<td style="text-align: left;">Must have (deve ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF19</td>
+<td style="text-align: left;">As notícias devem ser compartilháveis.</td>
+<td style="text-align: left;">Sim</td>
+<td style="text-align: left;">Must have (deve ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF20</td>
+<td style="text-align: left;">No calendário, os dias com evento/pesquisa devem ter cor diferente dos demais.</td>
+<td style="text-align: left;">Sim</td>
+<td style="text-align: left;">Should have (deveria ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF21</td>
+<td style="text-align: left;">O calendário deve permitir visualização de meses passados e futuros em relação ao mês atual.</td>
+<td style="text-align: left;">Sim</td>
+<td style="text-align: left;">Could have (poderia ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF22</td>
+<td style="text-align: left;">Na aba “síntese”, dados como gentílico, área territorial, população, renda, orçamento, IDH, matrículas, salário médio, PIB per capita e mortalidade infantil devem estar disponíveis por estado e município.</td>
+<td style="text-align: left;">Sim</td>
+<td style="text-align: left;">Must have (deve ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF23</td>
+<td style="text-align: left;">Filtros por país, estado e município devem estar disponíveis na aba “síntese”.</td>
+<td style="text-align: left;">Sim</td>
+<td style="text-align: left;">Must have (deve ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF24</td>
+<td style="text-align: left;">Jogos educativos sobre geografia, demografia e temas sociais.</td>
+<td style="text-align: left;">Não</td>
+<td style="text-align: left;">Could have (poderia ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF25</td>
+<td style="text-align: left;">Modo offline para uso do aplicativo sem conexão com a internet.</td>
+<td style="text-align: left;">Não</td>
+<td style="text-align: left;">Should have (deveria ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF26</td>
+<td style="text-align: left;">Central de Ajuda dentro do app, com informações sobre o uso do aplicativo</td>
+<td style="text-align: left;">Não</td>
+<td style="text-align: left;">Must have (deve ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF27</td>
+<td style="text-align: left;">Notificações para notícias relevantes e atualizações dos indicadores favoritos.</td>
+<td style="text-align: left;">Não</td>
+<td style="text-align: left;">Should have (deveria ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF28</td>
+<td style="text-align: left;">O usuário pode favoritar indicadores e visualizar as últimas atualizações.</td>
+<td style="text-align: left;">Não</td>
+<td style="text-align: left;">Should have (deveria ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF29</td>
+<td style="text-align: left;">Comparativo de indicadores por região.</td>
+<td style="text-align: left;">Não</td>
+<td style="text-align: left;">Must have (deve ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF30</td>
+<td style="text-align: left;">Possibilidade de responder a questionários relacionados ao censo diretamente pelo app.</td>
+<td style="text-align: left;">Não</td>
+<td style="text-align: left;">Must have (deve ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF31</td>
+<td style="text-align: left;">Possibilidade de realizar e preencher questionários diretamente no aplicativo.</td>
+<td style="text-align: left;">Não</td>
+<td style="text-align: left;">Should have (deveria ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF32</td>
+<td style="text-align: left;">Integração com outras fontes como sites ou APIs externas (ex: dados de transporte público).</td>
+<td style="text-align: left;">Não</td>
+<td style="text-align: left;">Should have (deveria ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF33</td>
+<td style="text-align: left;">Acesso a dados de diferentes fontes como o IBGE, através do app.</td>
+<td style="text-align: left;">Não</td>
+<td style="text-align: left;">Must have (deve ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF34</td>
+<td style="text-align: left;">Mapas interativos, com visualização de dados geográficos e demográficos.</td>
+<td style="text-align: left;">Não</td>
+<td style="text-align: left;">Must have (deve ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF35</td>
+<td style="text-align: left;">Possibilidade de filtro por tipo de dado.</td>
+<td style="text-align: left;">Não</td>
+<td style="text-align: left;">Must have (deve ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF36</td>
+<td style="text-align: left;">Possibilidade de exportar gráficos e resumos em formatos como PDF.</td>
+<td style="text-align: left;">Não</td>
+<td style="text-align: left;">Should have (deveria ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF37</td>
+<td style="text-align: left;">Computar informações de dados e gerar relatórios para exportação.</td>
+<td style="text-align: left;">Não</td>
+<td style="text-align: left;">Must have (deve ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF38</td>
+<td style="text-align: left;">O sistema deve apresentar os indicadores sociais e agropecuários.</td>
+<td style="text-align: left;">Não</td>
+<td style="text-align: left;">Must have (deve ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF39</td>
+<td style="text-align: left;">O sistema deve filtrar notícias por região e/ou tempo.</td>
+<td style="text-align: left;">Não</td>
+<td style="text-align: left;">Must have (deve ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF40</td>
+<td style="text-align: left;">O sistema deve apresentar mais dados na seção síntese para os respectivos locais (estado, município), como IDH, total de veículos, governante, entre outros, semelhante ao site de referência.</td>
+<td style="text-align: left;">Não</td>
+<td style="text-align: left;">Must have (deve ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF41</td>
+<td style="text-align: left;">O sistema deve exibir conteúdos produzidos para outras plataformas, como YouTube, TikTok e Instagram, em uma aba dedicada.</td>
+<td style="text-align: left;">Não</td>
+<td style="text-align: left;">Should have (deveria ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF42</td>
+<td style="text-align: left;">O sistema deve analisar os conteúdos acessados pelo usuário para recomendar conteúdos similares.</td>
+<td style="text-align: left;">Não</td>
+<td style="text-align: left;">Must have (deve ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF43</td>
+<td style="text-align: left;">O sistema deve permitir a comparação dos censos realizados em diferentes anos.</td>
+<td style="text-align: left;">Não</td>
+<td style="text-align: left;">Must have (deve ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF44</td>
+<td style="text-align: left;">O sistema deve exibir uma confirmação sobre a identidade do recenseador.</td>
+<td style="text-align: left;">Não</td>
+<td style="text-align: left;">Could have (poderia ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF45</td>
+<td style="text-align: left;">O sistema deve realizar estudos preditivos com base nos dados atuais.</td>
+<td style="text-align: left;">Não</td>
+<td style="text-align: left;">Must have (deve ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF46</td>
+<td style="text-align: left;">O sistema deve informar quais fatores influenciam o aumento ou a diminuição de determinado indicador.</td>
+<td style="text-align: left;">Não</td>
+<td style="text-align: left;">Should have (deveria ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF47</td>
+<td style="text-align: left;">O sistema deve indicar políticas públicas com base na análise dos dados adquiridos.</td>
+<td style="text-align: left;">Não</td>
+<td style="text-align: left;">Should have (deveria ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF48</td>
+<td style="text-align: left;">O sistema deve comparar os locais com maior e menor taxa de resposta ao censo.</td>
+<td style="text-align: left;">Não</td>
+<td style="text-align: left;">Should have (deveria ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF49</td>
+<td style="text-align: left;">Compartilhamento de métricas do aplicativo com a fonte atrelada ao IBGE</td>
+<td style="text-align: left;">Não</td>
+<td style="text-align: left;">Could have (poderia ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF50</td>
+<td style="text-align: left;">Possibilidade de realizar o próximo censo pelo aplicativo</td>
+<td style="text-align: left;">Não</td>
+<td style="text-align: left;">Should have (deveria ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF51</td>
+<td style="text-align: left;">Opção de modo noturno.</td>
+<td style="text-align: left;">Não</td>
+<td style="text-align: left;">Could have (poderia ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF52</td>
+<td style="text-align: left;">Opção de mudança de idiomas (Português, Inglês, Espanhol)</td>
+<td style="text-align: left;">Não</td>
+<td style="text-align: left;">Must have (deve ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF53</td>
+<td style="text-align: left;">Opção de alterar o tamanho da fonte (com botão)</td>
+<td style="text-align: left;">Não</td>
+<td style="text-align: left;">Must have (deve ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF54</td>
+<td style="text-align: left;">Opção de alto contraste do aplicativo (com botão)</td>
+<td style="text-align: left;">Não</td>
+<td style="text-align: left;">Must have (deve ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF55</td>
+<td style="text-align: left;">O sistema deve permitir busca refinada por dados e publicações.</td>
+<td style="text-align: left;">Não</td>
+<td style="text-align: left;">Must have (deve ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF56</td>
+<td style="text-align: left;">O sistema deve disponibilizar explicações simplificadas sobre os termos técnicos.</td>
+<td style="text-align: left;">Não</td>
+<td style="text-align: left;">Should have (deveria ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF57</td>
+<td style="text-align: left;">O sistema deve integrar-se com a conta Gov.br.</td>
+<td style="text-align: left;">Não</td>
+<td style="text-align: left;">Must have (deve ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF58</td>
+<td style="text-align: left;">O sistema deve permitir o compartilhamento de gráficos com link da fonte.</td>
+<td style="text-align: left;">Não</td>
+<td style="text-align: left;">Should have (deveria ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF59</td>
+<td style="text-align: left;">O sistema deve permitir a consulta a dados demográficos e indicadores por nível territorial detalhado.</td>
+<td style="text-align: left;">Sim</td>
+<td style="text-align: left;">Must have (deve ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF60</td>
+<td style="text-align: left;">O sistema deve possuir uma FAQ com respostas às dúvidas mais comuns.</td>
+<td style="text-align: left;">Não</td>
+<td style="text-align: left;">Must have (deve ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF61</td>
+<td style="text-align: left;">O sistema deve apresentar os dados do Censo de forma visual e interativa (ex: infográficos, gráficos).</td>
+<td style="text-align: left;">Não</td>
+<td style="text-align: left;">Must have (deve ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF62</td>
+<td style="text-align: left;">O sistema deve permitir acesso às publicações completas de cada pesquisa com a metodologia detalhada.</td>
+<td style="text-align: left;">Não</td>
+<td style="text-align: left;">Must have (deve ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RF63</td>
+<td style="text-align: left;">O sistema deve integrar todos ou a maioria dos aplicativos utilizados na coleta de dados de pesquisas.</td>
+<td style="text-align: left;">Não</td>
+<td style="text-align: left;">Must have (deve ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RNF01</td>
+<td style="text-align: left;">O sistema deve estar disponível de forma estável, sem travamentos ou quedas frequentes.</td>
+<td style="text-align: left;">Sim</td>
+<td style="text-align: left;">Must have (deve ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RNF02</td>
+<td style="text-align: left;">O sistema deve permitir uso fluido tanto em computadores quanto em dispositivos móveis.</td>
+<td style="text-align: left;">Sim</td>
+<td style="text-align: left;">Must have (deve ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RNF03</td>
+<td style="text-align: left;">O sistema deve ser compatível com ferramentas de acessibilidade (áudio, Libras).</td>
+<td style="text-align: left;">Parcialmente</td>
+<td style="text-align: left;">Must have (deve ter)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RNF04</td>
+<td style="text-align: left;">O sistema deve garantir que usuários com baixo letramento estatístico consigam utilizar a interface.</td>
+<td style="text-align: left;">Não</td>
+<td style="text-align: left;">Must have (deve ter)</td>
+</tr>
+</tbody>
+</table>
+<p><font size="2"><p style="text-align: center">Fonte: Técnica de Priorização MoSCoW, 2025.</p></font></p>
+<h2 id="5-anexos">5. Anexos</h2>
+<h3 id="51-termo-de-consentimento">5.1 Termo de Consentimento</h3>
+<div style="text-align: justify; text-indent: 2cm;">
+Todos os participantes envolvidos nas atividades de priorização assinaram um Termo de Consentimento Livre e Esclarecido (TCLE), conforme exigido pelas boas práticas de pesquisa e ética. O termo assegura que os participantes foram informados sobre os objetivos do estudo, a utilização dos dados e sua participação voluntária. O documento pode ser acessado no link abaixo:
+</div>
+
+<p>📄 <a href="https://drive.google.com/file/d/1WZ3gBeExYH11Q9Xp_prKqW6jigS1J4he/view?usp=sharing">Termo de Consentimento - TCLE (PDF)</a></p>
+<h3 id="52-registro-da-gravacao-da-tecnica">5.2 Registro da Gravação da Técnica</h3>
+<div style="text-align: justify; text-indent: 2cm;">
+Para fins de transparência, registro e validação do processo, a atividade de priorização foi gravada com o consentimento prévio dos participantes. A gravação contém a aplicação prática da técnica de priorização MoSCoW, permitindo futura consulta ou auditoria do processo. O arquivo da gravação está disponível no link a seguir:
+</div>
+
+<p>🎥 <a href="https://youtu.be/ZQDdjv1U1so">Gravação da Técnica de Priorização MoSCoW(Vídeo)</a></p>
+<h2 id="6-referencias">6. Referências</h2>
+<blockquote>
+<p>SERRANO, Milene; SERRANO, Mauricio. Requisitos – Aula 07. Material interno acadêmico da UnB.
+<p><strong>Figura 1:</strong> Referência MoSCoW</p>
+<img src="../../../assets/images/entrega2_lv_img/fonte_MoSCoW.png" width="500"/>
+<p><strong>Fonte:</strong> Slide Material Interno UnB, 2025.</p></p>
+</blockquote>
+<h2 id="7-historico-de-versoes">7. Histórico de Versões</h2>
+<p><font size="3"><p style="text-align: center">Tabela 3: Histórico de versões</p></font></p>
+<table>
+<thead>
+<tr>
+<th>Versão</th>
+<th>Descrição</th>
+<th>Autor</th>
+<th>Data</th>
+<th>Revisor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.0</td>
+<td>Criação do documento</td>
+<td><a href="https://github.com/GabrielSPinto">Gabriel Pinto</a></td>
+<td>03/05/2025</td>
+<td><a href="https://github.com/caioduart3">Caio Duarte</a></td>
+</tr>
+<tr>
+<td>1.1</td>
+<td>Adicionando imagem da fonte de referência</td>
+<td><a href="https://github.com/GabrielSPinto">Gabriel Pinto</a></td>
+<td>04/05/2025</td>
+<td><a href="https://github.com/caioduart3">Caio Duarte</a></td>
+</tr>
+<tr>
+<td>1.2</td>
+<td>Adicionando Cronograma da Priorização</td>
+<td><a href="https://github.com/GabrielSPinto">Gabriel Pinto</a></td>
+<td>04/05/2025</td>
+<td><a href="https://github.com/caioduart3">Caio Duarte</a></td>
+</tr>
+<tr>
+<td>1.3</td>
+<td>Adicionando Link do TCLE e Gravação</td>
+<td><a href="https://github.com/GabrielSPinto">Gabriel Pinto</a></td>
+<td>04/05/2025</td>
+<td><a href="https://github.com/caioduart3">Caio Duarte</a></td>
+</tr>
+<tr>
+<td>1.4</td>
+<td>Adicionando coluna de implementado</td>
+<td><a href="https://github.com/felixlaryssa">Laryssa Felix</a></td>
+<td>09/05/2025</td>
+<td><a href="https://github.com/LeticiaMonteiroo">Letícia Monteiro</a></td>
+</tr>
+</tbody>
+</table>
+<p><font size="2"><p style="text-align: center">Fonte: <a href="https://github.com/caioduart3">Caio Duarte</a>, <a href="https://github.com/GabrielSPinto">Gabriel Pinto</a>, <a href="https://github.com/joaofmoreiraa">João Félix</a>, <a href="https://github.com/felixlaryssa">Laryssa Felix</a>, <a href="https://github.com/LeticiaMonteiroo">Letícia Monteiro</a>, <a href="https://github.com/ludmilaaysha">Ludmila Nunes</a> e <a href="https://github.com/maymarquee">Mayara Marques</a>, 2025.</p></font></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar para o topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/Requisitos-de-Software/2025.1-Grupo05" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.annotate", "content.tabs.link", "header.autohide", "navigation.expand", "navigation.instant", "navigation.tabs", "navigation.top", "navigation.tracking"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>
